@@ -13,6 +13,7 @@
 <link rel="canonical" href="https://mo123elsayed.github.io/my-portofolio/">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2305060f'/%3E%3Cpath d='M36 10h18L28 36l-9-9z' fill='%2300e5ff'/%3E%3Cpath d='M54 32H38l-8 8 8 8z' fill='%23b45cff'/%3E%3Cpath d='M30 40l8 8-12 12-9-9z' fill='%23ff3df2'/%3E%3C/svg%3E">
 <meta property="og:type" content="website">
+<meta property="og:locale" content="en_US">
 <meta property="og:url" content="https://mo123elsayed.github.io/my-portofolio/">
 <meta property="og:site_name" content="Mohamed Elsayed">
 <meta name="twitter:card" content="summary">
@@ -132,6 +133,46 @@ section{padding:clamp(48px,7vw,80px) 0}
 @media(max-width:1100px){.fl{opacity:.32}}
 @media(max-width:760px){.fl{position:relative;right:auto;top:auto;margin:28px auto 22px;width:128px;opacity:.95;animation:floatm 6s ease-in-out infinite}}
 @keyframes floatm{50%{transform:translateY(-8px)}}
+
+/* comfort pass */
+html{font-size:106.25%}
+:root{--text:#eef1fa;--muted:#b4bdd6;--line:#232d52}
+body{line-height:1.7;letter-spacing:.005em}
+p,.lead,.contact-lead{max-width:62ch}
+.lead{font-size:1.12rem;color:var(--muted)}
+h1{letter-spacing:-.02em}
+h2{font-size:clamp(1.6rem,3vw,2.1rem)}
+.eyebrow,.skills h3,.timeline .meta{text-shadow:none}
+.skills h3,.timeline .meta{color:#ff7af5}
+.btn{display:inline-flex;align-items:center;gap:8px;font-weight:600}
+.ic{width:1.15em;height:1.15em;flex:none}
+.btn.primary{box-shadow:0 0 16px rgba(0,229,255,.28)}
+.btn.primary:hover{box-shadow:0 0 24px rgba(0,229,255,.45)}
+.about p{color:var(--muted)}
+section.alt{background:#070a18}
+.grid{gap:22px}
+.card{position:relative;padding:26px;overflow:hidden}
+.card::before{content:"";position:absolute;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent2),var(--pink));opacity:.7}
+.card:hover{box-shadow:0 12px 32px rgba(0,229,255,.12)}
+.kicker{display:block;font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:#8fa0cc;margin-bottom:12px}
+.card h3{font-size:1.2rem}
+.card p{color:var(--muted);line-height:1.65}
+.chip{background:rgba(0,229,255,.06);color:#8ef1ff}
+.card a.src{display:inline-block;padding-top:4px}
+.card a.src:hover{text-shadow:none;text-decoration:underline;text-underline-offset:4px}
+.skills li{color:var(--text)}
+.contact-grid{list-style:none;display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px;max-width:980px;margin:0 auto;text-align:left}
+.contact-lead{margin:0 auto 32px;color:var(--muted)}
+.ccard{display:grid;grid-template-columns:auto 1fr;column-gap:14px;align-items:center;background:linear-gradient(160deg,rgba(14,20,44,.95),rgba(8,11,26,.95));border:1px solid var(--line);border-radius:14px;padding:18px 20px;height:100%;transition:border-color .2s,transform .2s,box-shadow .2s}
+.ccard .ic{grid-row:span 2;width:26px;height:26px;color:var(--accent)}
+.ccard .clabel{font-size:.74rem;letter-spacing:.12em;text-transform:uppercase;color:#8fa0cc}
+.ccard .cval{font-weight:600;font-size:.95rem;overflow-wrap:anywhere}
+.ccard:hover{border-color:var(--accent);transform:translateY(-3px);box-shadow:0 10px 28px rgba(0,229,255,.12)}
+.ccard.accent{border-color:rgba(0,229,255,.55);background:linear-gradient(160deg,rgba(0,229,255,.12),rgba(180,92,255,.12))}
+.contact .wrap>.eyebrow,.contact h2{text-align:center}
+.contact h2::after{margin-left:auto;margin-right:auto}
+a:focus-visible,.btn:focus-visible,.ccard:focus-visible{outline:3px solid #fff;outline-offset:3px;box-shadow:0 0 0 6px rgba(0,229,255,.5)}
+@media(max-width:760px){html{font-size:100%}.contact-grid{grid-template-columns:1fr}.btns .btn{flex:1 1 auto;justify-content:center}}
 </style>
 </head>
 <body>
@@ -147,9 +188,9 @@ section{padding:clamp(48px,7vw,80px) 0}
 <h1 id="h-top">Hi, I'm Mohamed.<br>I build <em>Flutter</em> mobile apps.</h1>
 <p class="lead" id="typed" data-text="Junior Flutter developer based in Cairo, Egypt. I build cross-platform apps with Dart, Bloc and Firebase, with a focus on clean code and responsive interfaces.">Junior Flutter developer based in Cairo, Egypt. I build cross-platform apps with Dart, Bloc and Firebase, with a focus on clean code and responsive interfaces.</p>
 <div class="btns">
-<a class="btn primary" href="#projects">View projects</a>
-<a class="btn" href="mailto:muhammed.elsayed.usc@gmail.com">Get in touch</a>
-<a class="btn" href="https://github.com/Mo123elsayed" target="_blank" rel="noopener">GitHub</a>
+<a class="btn primary" href="Mohamed_Elsayed_Flutter_Developer_CV.pdf" download="Mohamed_Elsayed_CV.pdf"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-4.5-4.5M12 15l4.5-4.5M4 20h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>Download CV</a>
+<a class="btn" href="#projects">View projects</a>
+<a class="btn" href="#contact">Get in touch</a>
 </div>
 <div class="facts reveal">
 <div><b>BSc, Information Systems</b>Univ. of Sadat City, 2025</div>
@@ -176,12 +217,12 @@ section{padding:clamp(48px,7vw,80px) 0}
 <section aria-labelledby="h-projects" id="projects" class="alt"><div class="wrap">
 <div class="eyebrow">Projects</div><h2 id="h-projects">Things I've built</h2>
 <div class="grid">
-<article class="card reveal"><h3>Weather Now</h3><p>A weather app built with Flutter, Bloc and the MVVM pattern. It shows live forecasts from a weather API, stores data locally, and adapts to different screen sizes.</p><div class="chips"><span class="chip">Flutter</span><span class="chip">Bloc</span><span class="chip">MVVM</span><span class="chip">REST API</span></div><a class="src" href="https://github.com/Mo123elsayed/weather_now" target="_blank" rel="noopener">View on GitHub &rarr;</a></article>
-<article class="card reveal"><h3>ToDo App</h3><p>A cross-platform task manager with Firebase Authentication and Cloud Firestore for backend services. Uses Bloc for state and has a responsive, multi-language interface.</p><div class="chips"><span class="chip">Flutter</span><span class="chip">Firebase Auth</span><span class="chip">Firestore</span><span class="chip">Bloc</span></div><a class="src" href="https://github.com/Mo123elsayed/ToDo_app" target="_blank" rel="noopener">View on GitHub &rarr;</a></article>
-<article class="card reveal"><h3>Movie Browsing App</h3><p>A movie discovery app using the TMDB API. Browse Now Playing, Upcoming, Popular and Top Rated lists, filter by genre, search, and save favorites to a watchlist.</p><div class="chips"><span class="chip">Flutter</span><span class="chip">Bloc</span><span class="chip">Dio</span><span class="chip">TMDB API</span></div><a class="src" href="https://github.com/Mo123elsayed/movies_app" target="_blank" rel="noopener">View on GitHub &rarr;</a></article>
-<article class="card reveal"><h3>BMI Calculator</h3><p>A clean BMI calculator for Android and iOS. Enter height and weight to get an instant result. Structured with Bloc/Cubit and a presentation, domain and data layer split.</p><div class="chips"><span class="chip">Flutter</span><span class="chip">Bloc / Cubit</span><span class="chip">Clean Architecture</span></div><a class="src" href="https://github.com/Mo123elsayed/BMI-simple-App" target="_blank" rel="noopener">View on GitHub &rarr;</a></article>
-<article class="card reveal"><h3>PDF Library</h3><p>A simple PDF reader app with in-app PDF viewing and custom categories for organizing content, wrapped in a responsive, intuitive interface.</p><div class="chips"><span class="chip">Flutter</span><span class="chip">PDF viewing</span><span class="chip">Responsive UI</span></div><a class="src" href="https://github.com/Mo123elsayed/library_app" target="_blank" rel="noopener">View on GitHub &rarr;</a></article>
-<article class="card reveal"><h3>Travel Guide</h3><p>A tourism app for exploring destinations with images and detailed descriptions. Browse trip categories, view details, and save favorites, with smooth navigation.</p><div class="chips"><span class="chip">Flutter</span><span class="chip">Navigation</span><span class="chip">Responsive UI</span></div><a class="src" href="https://github.com/Mo123elsayed/Travel-app" target="_blank" rel="noopener">View on GitHub &rarr;</a></article>
+<article class="card reveal"><span class="kicker">Flutter app &middot; 01</span><h3>Weather Now</h3><p>A weather app built with Flutter, Bloc and the MVVM pattern. It shows live forecasts from a weather API, stores data locally, and adapts to different screen sizes.</p><div class="chips"><span class="chip">Flutter</span><span class="chip">Bloc</span><span class="chip">MVVM</span><span class="chip">REST API</span></div><a class="src" href="https://github.com/Mo123elsayed/weather_now" target="_blank" rel="noopener noreferrer" aria-label="Weather Now, view source on GitHub">View source <span aria-hidden="true">&rarr;</span></a></article>
+<article class="card reveal"><span class="kicker">Flutter app &middot; 02</span><h3>ToDo App</h3><p>A cross-platform task manager with Firebase Authentication and Cloud Firestore for backend services. Uses Bloc for state and has a responsive, multi-language interface.</p><div class="chips"><span class="chip">Flutter</span><span class="chip">Firebase Auth</span><span class="chip">Firestore</span><span class="chip">Bloc</span></div><a class="src" href="https://github.com/Mo123elsayed/ToDo_app" target="_blank" rel="noopener noreferrer" aria-label="ToDo App, view source on GitHub">View source <span aria-hidden="true">&rarr;</span></a></article>
+<article class="card reveal"><span class="kicker">Flutter app &middot; 03</span><h3>Movie Browsing App</h3><p>A movie discovery app using the TMDB API. Browse Now Playing, Upcoming, Popular and Top Rated lists, filter by genre, search, and save favorites to a watchlist.</p><div class="chips"><span class="chip">Flutter</span><span class="chip">Bloc</span><span class="chip">Dio</span><span class="chip">TMDB API</span></div><a class="src" href="https://github.com/Mo123elsayed/movies_app" target="_blank" rel="noopener noreferrer" aria-label="Movie Browsing App, view source on GitHub">View source <span aria-hidden="true">&rarr;</span></a></article>
+<article class="card reveal"><span class="kicker">Flutter app &middot; 04</span><h3>BMI Calculator</h3><p>A clean BMI calculator for Android and iOS. Enter height and weight to get an instant result. Structured with Bloc/Cubit and a presentation, domain and data layer split.</p><div class="chips"><span class="chip">Flutter</span><span class="chip">Bloc / Cubit</span><span class="chip">Clean Architecture</span></div><a class="src" href="https://github.com/Mo123elsayed/BMI-simple-App" target="_blank" rel="noopener noreferrer" aria-label="BMI Calculator, view source on GitHub">View source <span aria-hidden="true">&rarr;</span></a></article>
+<article class="card reveal"><span class="kicker">Flutter app &middot; 05</span><h3>PDF Library</h3><p>A simple PDF reader app with in-app PDF viewing and custom categories for organizing content, wrapped in a responsive, intuitive interface.</p><div class="chips"><span class="chip">Flutter</span><span class="chip">PDF viewing</span><span class="chip">Responsive UI</span></div><a class="src" href="https://github.com/Mo123elsayed/library_app" target="_blank" rel="noopener noreferrer" aria-label="PDF Library, view source on GitHub">View source <span aria-hidden="true">&rarr;</span></a></article>
+<article class="card reveal"><span class="kicker">Flutter app &middot; 06</span><h3>Travel Guide</h3><p>A tourism app for exploring destinations with images and detailed descriptions. Browse trip categories, view details, and save favorites, with smooth navigation.</p><div class="chips"><span class="chip">Flutter</span><span class="chip">Navigation</span><span class="chip">Responsive UI</span></div><a class="src" href="https://github.com/Mo123elsayed/Travel-app" target="_blank" rel="noopener noreferrer" aria-label="Travel Guide, view source on GitHub">View source <span aria-hidden="true">&rarr;</span></a></article>
 </div>
 </div></section>
 
@@ -206,12 +247,13 @@ section{padding:clamp(48px,7vw,80px) 0}
 
 <section aria-labelledby="h-contact" id="contact" class="contact"><div class="wrap">
 <div class="eyebrow">Contact</div><h2 id="h-contact">Let's talk</h2>
-<p>I'm available for junior Flutter and mobile developer roles. The best way to reach me is by email.</p>
-<div class="btns">
-<a class="btn primary" href="mailto:muhammed.elsayed.usc@gmail.com">muhammed.elsayed.usc@gmail.com</a>
-<a class="btn" href="https://www.linkedin.com/in/muhammedelsayed-dev" target="_blank" rel="noopener">LinkedIn</a>
-<a class="btn" href="https://github.com/Mo123elsayed" target="_blank" rel="noopener">GitHub</a>
-</div>
+<p class="contact-lead">I'm available for junior Flutter and mobile developer roles. Email is the quickest way to reach me, and my CV is one click away.</p>
+<ul class="contact-grid">
+<li class="reveal"><a class="ccard" href="mailto:muhammed.elsayed.usc@gmail.com"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 7l9 6 9-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg><span class="clabel">Email</span><span class="cval">muhammed.elsayed.usc@gmail.com</span></a></li>
+<li class="reveal"><a class="ccard" href="https://www.linkedin.com/in/muhammedelsayed-dev" target="_blank" rel="noopener noreferrer"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5a2.5 2.5 0 11-.01 5 2.5 2.5 0 01.01-5zM3 9.75h4V21H3zM9.5 9.75h3.8v1.6h.06c.53-1 1.83-2 3.77-2 4.03 0 4.77 2.65 4.77 6.1V21h-4v-5.1c0-1.22-.02-2.78-1.7-2.78-1.7 0-1.96 1.33-1.96 2.7V21h-4z"/></svg><span class="clabel">LinkedIn</span><span class="cval">in/muhammedelsayed-dev</span></a></li>
+<li class="reveal"><a class="ccard" href="https://github.com/Mo123elsayed" target="_blank" rel="noopener noreferrer"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 00-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.45-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.35 1.08 2.92.83.09-.65.35-1.09.64-1.34-2.22-.25-4.55-1.11-4.55-4.94 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.5 9.5 0 015 0c1.91-1.29 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.68 0 3.84-2.34 4.69-4.57 4.94.36.31.68.92.68 1.85v2.74c0 .27.18.58.69.48A10 10 0 0012 2z"/></svg><span class="clabel">GitHub</span><span class="cval">github.com/Mo123elsayed</span></a></li>
+<li class="reveal"><a class="ccard accent" href="Mohamed_Elsayed_Flutter_Developer_CV.pdf" download="Mohamed_Elsayed_CV.pdf"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m0 0l-4.5-4.5M12 15l4.5-4.5M4 20h16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg><span class="clabel">Resume</span><span class="cval">Download CV (PDF)</span></a></li>
+</ul>
 </div></section>
 </main>
 <footer><div class="wrap">&copy; 2026 Mohamed Elsayed &middot; Cairo, Egypt</div></footer>
